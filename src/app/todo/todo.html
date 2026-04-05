@@ -1,0 +1,17 @@
+
+<h1>To Do App</h1>
+
+<input type="text"  > 
+<button (click)="addTask()">Add</button>
+
+
+<div class="rows">
+    @for (item of taskArr; track $index) {
+      <div class="row">
+        <span>workout</span>
+        <button (click)="completeTask(item)">{{item.iscompleted? "undo":"complete"}}</button>
+        <button>Delete</button>
+    </div>
+    }
+    
+</div>
